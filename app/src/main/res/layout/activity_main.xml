@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    tools:ignore="MissingClass" >
+    tools:ignore="MissingClass"
+    android:background="#F2C78C">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -27,12 +28,19 @@
                 android:src="@drawable/feedfood" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/search"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/search_edit_background"
+                android:baselineAligned="false"
+                android:drawableEnd="@drawable/search"
+
+                android:drawablePadding="10dp"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:hint="Search Your Favorite Food"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textStyle="italic" />
 
 
         </LinearLayout>
