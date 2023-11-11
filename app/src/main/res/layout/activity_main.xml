@@ -28,6 +28,7 @@
                 android:padding="10dp"
                 android:src="@drawable/feedfood" />
 
+
             <EditText
                 android:id="@+id/search"
                 android:layout_width="371dp"
