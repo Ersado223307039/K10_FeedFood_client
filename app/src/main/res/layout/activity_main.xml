@@ -11,8 +11,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="-99dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-185dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,10 +32,10 @@
                 android:id="@+id/search"
                 android:layout_width="371dp"
                 android:layout_height="50dp"
+                android:layout_gravity="center"
                 android:background="@drawable/search_edit_background"
                 android:baselineAligned="false"
                 android:drawableEnd="@drawable/search"
-                android:layout_gravity="center"
                 android:drawablePadding="10dp"
                 android:ems="10"
                 android:hint="Search Your Favorite Food"
@@ -46,21 +46,50 @@
             <ImageView
                 android:id="@+id/diskon"
                 android:layout_width="252dp"
-                android:layout_height="171dp"
+                android:layout_height="203dp"
                 android:layout_gravity="center"
                 android:adjustViewBounds="true"
                 android:fitsSystemWindows="true"
                 android:padding="10dp"
-                android:src="@drawable/Diskon" />
+                android:src="@drawable/diskon" />
+
+            <TextView
+                android:id="@+id/kategori1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="Categories"
+                android:paddingStart="20dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/kategori"
                 android:layout_width="match_parent"
-                android:layout_height="171dp"
+                android:layout_height="107dp"
                 android:adjustViewBounds="true"
                 android:fitsSystemWindows="true"
                 android:padding="10dp"
                 android:src="@drawable/kategori" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Food and Drink"
+                android:paddingStart="20dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:layout_marginTop="16dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
 
         </LinearLayout>
     </ScrollView>
