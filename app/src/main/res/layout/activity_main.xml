@@ -30,12 +30,12 @@
 
             <EditText
                 android:id="@+id/search"
-                android:layout_width="match_parent"
+                android:layout_width="371dp"
                 android:layout_height="50dp"
                 android:background="@drawable/search_edit_background"
                 android:baselineAligned="false"
                 android:drawableEnd="@drawable/search"
-
+                android:layout_gravity="center"
                 android:drawablePadding="10dp"
                 android:ems="10"
                 android:hint="Search Your Favorite Food"
@@ -44,9 +44,19 @@
                 android:textStyle="italic" />
 
             <ImageView
-                android:id="@+id/kategorii"
+                android:id="@+id/diskon"
+                android:layout_width="252dp"
+                android:layout_height="171dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:fitsSystemWindows="true"
+                android:padding="10dp"
+                android:src="@drawable/Diskon" />
+
+            <ImageView
+                android:id="@+id/kategori"
                 android:layout_width="match_parent"
-                android:layout_height="162dp"
+                android:layout_height="171dp"
                 android:adjustViewBounds="true"
                 android:fitsSystemWindows="true"
                 android:padding="10dp"
