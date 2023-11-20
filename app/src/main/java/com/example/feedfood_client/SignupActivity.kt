@@ -5,11 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class SignupActivity : AppCompatActivity() {
     private fun isValidSIgnUp( email: String, password: String): Boolean {
         return  email.isNotEmpty() && password.isNotEmpty()
     }
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +32,8 @@ class SignupActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
+
+
 
     }
 }

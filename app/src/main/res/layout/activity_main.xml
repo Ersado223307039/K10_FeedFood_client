@@ -19,30 +19,39 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/feedfood"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="162dp"
-                android:adjustViewBounds="true"
-                android:fitsSystemWindows="true"
-                android:padding="10dp"
-                android:src="@drawable/feedfood" />
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    android:fitsSystemWindows="true"
+                    android:padding="10dp"
+                    android:src="@drawable/feed"
+                    android:layout_marginStart="10dp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    android:fitsSystemWindows="true"
+                    android:padding="10dp"
+                    android:src="@drawable/feed"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginEnd="10dp"/>
+
+            </LinearLayout>
 
 
-            <EditText
+            <androidx.appcompat.widget.SearchView
                 android:id="@+id/search"
-                android:layout_width="371dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:background="@drawable/search_edit_background"
-                android:baselineAligned="false"
-                android:drawableEnd="@drawable/search"
-                android:drawablePadding="10dp"
-                android:ems="10"
-                android:hint="Search Your Favorite Food"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:textStyle="italic" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C0C0C0"
+                android:layout_margin="20dp"/>
 
             <ImageView
                 android:id="@+id/diskon"
@@ -88,8 +97,20 @@
                 android:layout_marginTop="16dp"/>
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_food"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"/>
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:text="History"
+
+                android:drawableLeft=""/>
 
 
         </LinearLayout>
